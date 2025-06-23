@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <?!= HtmlService.createHtmlOutputFromFile('style').getContent(); ?>
+  </head>
+  <body>
+    <h2>📁 Загрузка Excel-файла</h2>
+    <form id="upload-form">
+      <input type="file" id="file-input" accept=".xlsx" />
+      <button type="submit">Загрузить и проверить</button>
+    </form>
+    <div id="status"></div>
+    <?!= HtmlService.createHtmlOutputFromFile('script').getContent(); ?>
+  </body>
+</html>
